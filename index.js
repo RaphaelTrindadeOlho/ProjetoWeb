@@ -5,6 +5,10 @@ app.set ("view engine", "ejs");
 
 const router = require ("./routers/index");
 
+const conexao = require ("./models/conexao");
+const tabelas = require ("./models/tabelas");
+
+tabelas.init(conexao);
 
 router (app);
 
