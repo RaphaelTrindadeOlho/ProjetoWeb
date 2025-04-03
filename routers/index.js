@@ -1,5 +1,5 @@
-const routerAntendimento = require ("./atendimentoRouter")
+const routerUser = require ("./userRouter")
 
 module.exports =  (app) => {
-  app.use (routerAntendimento);
+  app.use (routerUser);
 };
